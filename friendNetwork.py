@@ -27,12 +27,11 @@ class Network(object):
 			self.friendNet[self.names[name1]].append((self.names[name2],strength) )
 			name1 = self.getNext()
 
-
 	def checkName(self, user):
 		if user in self.names:
-			print "Exists"
+			print ("Exists")
 		else:
-			print "Does not Exist"
+			print ("Does not Exist")
 
 	def checkConnection(self, name1, name2):
 		user1 = self.names[name1]
@@ -40,10 +39,13 @@ class Network(object):
 		for p in self.friendNet[user1]:
 			for q in p:
 				if p[0]==user2:
-					print p[1]
+					print (p[1])
 					return
-		print "No connection"
-
+		print ("No connection")
+		
+	def getModeScore(self, name):
+                self.person = self.names[name]
+                theModeScore = ModeScore(self.person, self.friendNet)
 
 
 	#helper functions:
