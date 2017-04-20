@@ -16,12 +16,12 @@ def main(filename):
 			name2 = raw_input("Second Name: ")
 			myNet.checkConnection(name1, name2)
 		elif prompt == "3":
-			chainFinder.Dijkstra("Wang", "Zhang")
 			name1 = raw_input("First Name: ")
 			name2 = raw_input("Second Name: ")
-			chainFinder.Dijkstra(name1, name2)
+			chain = chainFinder.bellmanFord(name1, name2)
+			chainFinder.printChain(chain)
 		elif prompt == "4":
-			name = raw_input("Who would you like to find the mean score for?")
+			name = raw_input("Who would you like to find the mean score for? : ")
 			myNet.getModeScore(name)
 		else:
 			print ("Please enter a command")
