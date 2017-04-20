@@ -44,8 +44,8 @@ class Network(object):
 		print ("No connection")
 		
 	def getModeScore(self, name):
-                self.person = self.names[name]
-                theModeScore = ModeScore(self.person, self.friendNet)
+		person = self.names[name]
+        theModeScore = ModeScore(self.person, self.friendNet)
 
 
 	#helper functions:
