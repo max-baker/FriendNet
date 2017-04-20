@@ -1,0 +1,30 @@
+Bowers DePaulma Schroeder Worobec Yerion Zhang Talarico Wang Zhao end
+Bowers Schroeder 9
+Bowers Wang 2
+Bowers Worobec 3
+Bowers DePaulma 7
+DePaulma Yerion 8
+DePaulma Worobec 4
+DePaulma Talarico 10
+DePaulma Schroeder 6
+Schroeder Talarico 5
+Schroeder Zhang 6
+Schroeder Worobec 5
+Schroeder Zhao 4
+Worobec Bowers 7
+Worobec Schroeder 6
+Worobec Yerion 4
+Worobec Talarico 3
+Yerion DePaulma 8
+Yerion Zhang 6
+Yerion Wang 4
+Zhang Zhao 10
+Zhang Wang 7
+Zhang Bowers 5
+Talarico DePaulma 10
+Talarico Zhao 5
+Talarico Yerion 5
+Wang Zhang 6
+Wang Zhao 7
+Wang Bowers 4
+Zhao Bowers 5 end
