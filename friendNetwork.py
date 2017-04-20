@@ -45,7 +45,7 @@ class Network(object):
 		
 	def getModeScore(self, name):
 		person = self.names[name]
-        theModeScore = ModeScore(self.person, self.friendNet)
+        #theModeScore = ModeScore(self.person, self.friendNet)
 
 
 	#helper functions:

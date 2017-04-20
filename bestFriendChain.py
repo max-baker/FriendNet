@@ -21,12 +21,19 @@ class BestFriendChain(object):
                 minPriorityQueue[source] = 0
                 while goal not in visited.keys():
                         currNode = self.shortestNode(minPriorityQueue)
+                        for connection in self.enemyNet[self.names[currNode]]:
+                                print "boom"
 
         def shortestNode(self, myDict):
-                currSmallest = myDict[myDict.keys()[0]]
-                for i in myDict:
-                        if currSmallest[1] < i[1]:
-                                currSmallest = i
+                currSmallest = myDict[myDict.keys()[0]] #int
+                smallNode = myDict.keys()[0]
+                i=0
+                while i < len(myDict):
+                        if currSmallest > myDict.values()[i]:
+                                currSmallest = myDict.values()[i]
+                                smallNode = myDict.keys()[i]
+                        i += 1
+                return smallNode
 
 
                 
