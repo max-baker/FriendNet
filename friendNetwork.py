@@ -1,3 +1,5 @@
+import modeScore
+
 class Network(object):
 	def __init__(self, input_stream):
 		self.input_stream = input_stream
@@ -44,10 +46,9 @@ class Network(object):
 		print ("No connection")
 		
 	def getModeScore(self, name):
-		person = self.names[name]
-        #theModeScore = ModeScore(self.person, self.friendNet)
-
-
+		self.person = self.names[name]
+                self.theModeScore = modeScore.ModeScore(self.person, self.friendNet)
+                
 	#helper functions:
 	def getNext(self):
 		name = ''
