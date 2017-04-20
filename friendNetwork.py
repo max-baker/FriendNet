@@ -26,7 +26,6 @@ class Network(object):
 			strength = self.getNext()
 			self.friendNet[self.names[name1]].append((self.names[name2],strength) )
 			name1 = self.getNext()
-		print self.friendNet
 
 
 	def checkName(self, user):
